@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<input id="title" name="title">
+<span id="title_name"></span>
+<input id="sub" type="submit" value="Valider">
+
+
+<div id="all">
+<span id="date"></span>
+<div class="screen">
+    <span class="deg">0°</span>
+    <div class="criteres">
+        <span>Temp. max :<span class="temp_max"></span></span>
+        <span>Temp. min :<span class="temp_min"></span></span>
+        <span>Pres. atmosphérique :<span class="pres"></span></span>
+        <span>Vitesse du vent :<span class="wind"></span></span>
+        <span>Humidité :<span class="humidite"></span></span>
+    </div>
+</div>
+
+<div id="plan">
+    <div id="coord">
+        <span>Longitude :<span class="long"></span></span>
+        <span class="latt_zone">Latitude :<span class="latt"></span></span>
+    </div>
+    <div class="plan_zone">
+    </div>
+</div>
+</div>
+<script src="exercice.js"></script>
+<script src="http://api.openweathermap.org/data/2.5/weather?q=Paris,France&callback=interpreteMeteo"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>
